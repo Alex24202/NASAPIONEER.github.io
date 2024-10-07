@@ -1,0 +1,93 @@
+
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: url("https://images-assets.nasa.gov/image/9015550/9015550~medium.jpg");
+        }
+    #photoContainer{
+        margin-top: -80px;
+        margin-left: 60px;; 
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .card-container {
+        position: relative;
+        width: 212px;
+        height: 156px;
+    }
+    .user-name {
+        position: absolute;
+        top: 80px; /* Ajusta esta posición para que encaje sobre las líneas blancas */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: black; /* Cambia el color si lo necesitas */
+    }
+    .photo-container {
+        position: absolute;
+        top: 100px; /* Ajusta la posición de acuerdo al recuadro blanco */
+        left: 20px; /* Ajusta esta posición según sea necesario */
+        width: 50px; /* Ajusta el tamaño del recuadro blanco */
+        height: 50px;
+        overflow: hidden;
+        background-color: white;
+    }
+    .photo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+        button {
+            background-color: #001f4d; /* Azul marino */
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 5px;
+            cursor: url(Cursor.png), auto; /* Cursor planeta */
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            margin: 5px;
+        }
+
+        button:hover {
+            color: #00cfff; /* Celeste */
+            background-color: #000000; /* Cambia el fondo a negro */
+        }
+
+        button:active {
+            transform: scale(0.98); /* Efecto de presionar */
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        input[type="text"], input[type="file"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+#result{
+    opacity: 0%;
+}

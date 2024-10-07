@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://images-assets.nasa.gov/image/7994361/7994361~medium.jpg") no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    height: 50px;
+    background-color: #0056b3;
+    border-radius: 10px;
+    opacity: 85%;
+    margin: 0px 250px;
+}
+
+h2 {
+    color: #444;
+}
+#user-name{
+    font-size: 24px;
+    margin: 15px 250px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 70%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 250px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prize {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}

@@ -1,0 +1,226 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://images-assets.nasa.gov/image/7994361/7994361~medium.jpg") no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro para mejorar legibilidad */
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+/* Texto de descripción */
+p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.card {
+    display: none; /* Todas las preguntas están ocultas por defecto */
+}
+
+.card.active {
+    display: block; /* Solo se muestra la pregunta actual */
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.submit-btn:focus {
+    outline: 2px solid #45a049;
+}
+
+/* Cards-container para ocultar preguntas no activas */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card de preguntas, inicialmente ocultas */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Títulos de las misiones */
+.card h2 {
+    color: #2c3e50;
+}
+
+/* Estilos para los inputs de radio y textarea */
+.card label, .card textarea {
+    display: block;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Estilo para el botón de enviar */
+.submit-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.submit-btn:focus {
+    outline: 2px solid #2980b9;
+}
+
+/* Estilo para el nombre del usuario */
+#nombreCard {
+    margin-bottom: 20px;
+}
+
+#nombre {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#nombre:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Botón para comenzar el quiz */
+#startQuizBtn {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#startQuizBtn:hover {
+    background-color: #229954;
+}
+
+#startQuizBtn:focus {
+    outline: 2px solid #229954;
+}
+
+/* Estilo para el resultado final */
+#resultadoFinal {
+    background-color: #e8f8f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+#resultadoFinal h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+}
+
+#resultadoImagen {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Enlace de la página principal */
+#homeLink {
+    margin-top: 20px;
+}
+
+#homeLink a {
+    font-size: 1.2em;
+    color: #3498db;
+    text-decoration: none;
+}
+
+#homeLink a:hover {
+    text-decoration: underline;
+}
+
+#homeLink a:focus {
+    outline: 2px solid #3498db;
+}
+
+/* Estilo para el footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}

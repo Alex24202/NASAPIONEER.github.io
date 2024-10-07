@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://noirlab.edu/public/media/archives/images/screen/iotw2036a.jpg") no-repeat fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Header Styles */
+.main-header {
+    text-align: center;
+    padding: 60px 0;
+    
+}
+
+.main-header h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #ffffff, 0 0 0.5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.main-header h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: #d1d9e3;
+    font-weight: 400;
+    background-color:#000428;
+    opacity: 65%;
+    border-radius: 8px;
+}
+
+/* Glow Effect */
+
+
+/* Navigation Styles */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000428;
+    padding: 20px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.main-nav ul li a:hover {
+    background-color: #0ff;
+    color: #000428;
+    border-radius: 5px;
+}
+
+/* Gallery Styles */
+.planet-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.planet-gallery figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.6s ease;
+}
+
+.planet-gallery figure:hover {
+    transform: scale(1.05);
+}
+
+.planet-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.planet-gallery figure:hover img {
+    transform: scale(1.1);
+}
+
+.planet-gallery .capa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 15%;
+    padding: 15px;
+    transform: translateY(75%);
+    transition: transform 0.3s ease;
+}
+
+.planet-gallery figure:hover .capa {
+    transform: translateY(0);
+}
+
+.planet-gallery .capa h1 {
+    font-size: 1.5rem;
+    color: #0ff;
+}
+
+.planet-gallery .capa p {
+    font-size: 1rem;
+    color: #d1d9e3;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #000428;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.5rem;
+    }
+    .main-header h3 {
+        font-size: 1.2rem;
+    }
+}

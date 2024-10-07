@@ -1,0 +1,118 @@
+body{
+    font-family: 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+    background-image: url('https://ciencia.nasa.gov/wp-content/uploads/sites/2/2023/06/SMACS0723_nircam-jpg.webp?w=1280&format=webp');
+
+}
+
+.encabezado {
+    height: 100px;
+    width: 100%;
+    margin: 3px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom-left-radius: 4px;
+    text-shadow: 2px 2px 8px rgba(49, 4, 4, 0.8); 
+    padding: 40px 20px; 
+    background-image: url("https://www.nasa.gov/wp-content/uploads/2023/12/53100538023-bc6480e5a4-k.jpg");
+}
+
+.tit{
+    line-height-step: 100%;
+    position: relative;
+    background-image: url("https://www.nasa.gov/wp-content/uploads/2023/12/53100538023-bc6480e5a4-k.jpg");
+
+}
+#container{
+    font-family: 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+   
+}
+
+
+#container .parrafo_1{
+    font-size: 18px;    
+    font-style: italic;
+}
+#container .ima1{
+    width: 100%;  /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 100%;  /* Hace que la imagen ocupe el 100% del alto del contenedor */
+    border-radius: 55px;
+    -webkit-padding-start: 10%;
+    border-radius: 55px;
+    background: linear-gradient(315deg, #2b2d79, #242666);
+    box-shadow:  -17px -17px 26px #11122f,
+                17px 17px 26px #3f42b3;
+}
+
+#container-parrafo_1{
+    float: left;
+    margin-right: 20px;
+   
+}
+#container-parrafo_1 ima1{
+
+    width: 50px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0px 4px 8px rebeccapurple(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .image-container {
+        float: none; /* Desactiva el float en pantallas pequeñas */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    .image-container img {
+        width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+        max-width: 300px; /* Limita el ancho máximo en pantallas pequeñas */
+    }
+}
+
+
+
+.list {
+    display: -webkit-flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: left; 
+    background-color: #333; 
+    padding: 10px 0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+.list li {
+    display: block;
+    float:left;
+    color: rgb(252, 20, 20); 
+    padding: 14px 80px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-family: 'Arial', sans-serif; 
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; 
+    margin: 0 10px; 
+}
+
+.list li:hover {
+    background-color: #555; 
+    color: #1900ff; 
+    transform: scale(1.1); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.list li::after {
+    content: '';
+    display: list-item;
+    width: 0;
+    height: 2px;
+    background-color: #0084ff; 
+    transition: width 0.3s ease-in-out;
+    margin: auto;
+}
+
+
+.list li:hover::after {
+    width: 100%;
+}

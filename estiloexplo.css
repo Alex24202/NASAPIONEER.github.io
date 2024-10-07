@@ -1,0 +1,157 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+}
+
+body {
+    background: url("https://images-assets.nasa.gov/image/PIA17569/PIA17569~small.jpg") no-repeat fixed;
+    background-size: cover;
+    color: #e0e1dd;
+    line-height: 1.6;
+    padding: 0 2rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #eaeaea;
+}
+
+/* Dynamic Background */
+header {
+    background-image: linear-gradient(135deg, #1b263b 30%, #415a77 70%);
+    padding: 4rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.container {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.life, .date, .GALERY {
+    background-color: #1b263b;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.life:hover, .date:hover, .GALERY:hover {
+    background-color: #3f5765;
+    transform: translateY(-10px);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #e0e1dd;
+    line-height: 1.8;
+}
+
+dl dt h {
+    font-weight: bold;
+    color: #eaeaea;
+}
+
+dl dd {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #a7b1c2;
+}
+
+a {
+    text-decoration: none;
+    color: #f4d160;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffeb99;
+}
+
+.GALERY a {
+    text-decoration: none;
+}
+
+.GALERY h {
+    text-align: center;
+    font-weight: bold;
+    color: #eaeaea;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* HOME button */
+div > a {
+    display: inline-block;
+    background-color: #f4d160;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2rem auto;
+    color: #0d1b2a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+div > a:hover {
+    background-color: #ffeb99;
+    color: #0d1b2a;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
